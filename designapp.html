@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shrink On Scroll</title>
+	<style>
+		    *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.section-1 {
+	background: url("123.jpeg");
+	width: 100%;
+	background-size: cover;
+	height: 100vh;
+	background-position: center;
+}
+header {
+	display: flex;
+	padding: 30px;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transition: 500ms;
+}
+nav {
+	margin-right: 70px;
+}
+nav a {
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 15px;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #eee;
+	text-transform: uppercase;
+	border-bottom:  3px solid transparent;
+	padding: 10px 1px;
+	transition: 200ms;
+}
+.active {
+	border-color: #00B3FF;
+}
+nav a:hover {
+	border-color: #00B3FF;
+}
+.logo {
+	flex: 1;
+	font-size: 35px;
+	font-family: sans-serif;
+	margin-left: 70px;
+	color: #fff;
+}
+.bgc {
+	background: #eee;
+	padding: 10px;
+}
+.bgc .logo {
+	font-size: 30px;
+	color: #000;
+}
+.bgc nav a {
+	color: #222;
+}
+
+
+
+.section-2 {
+	padding: 20px;
+	padding-left: 60px;
+}
+.section-2 h1 {
+	padding: 20px;
+	font-size: 40px;
+}
+.section-2 p {
+	padding: 20px;
+	line-height: 1.8em;
+	font-size: 18px;
+}
+@media (max-width: 769px){
+	header {
+		flex-direction: column;
+		padding: 20px;
+	}
+	nav {
+		padding: 15px;
+		margin: 0px;
+	}
+}
+	</style>
+</head>
+<body>
+    <section class="section-1">
+    	<header>
+    		<h2 class="logo"></h2>
+	    	<nav>
+	    		<a href="Design.html" class="active" target="_blank">Home</a>
+	    	</nav>
+    	</header>
+    </section>
+    <section class="section-2">
+    	<h1>Adobe Photoshop</h1>
+    	<p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1987 by Thomas and John Knoll. Since then, the software has become the most used tool for professional digital art, especially in raster graphics editing. The software's name is often colloquially used as a verb (e.g. "to photoshop an image", "photoshopping", and "photoshop contest") although Adobe discourages such use.
+		Photoshop can edit and compose raster images in multiple layers and supports masks, alpha compositing and several color models. Photoshop uses its own PSD and PSB file formats to support these features. In addition to raster graphics, Photoshop has limited abilities to edit or render text and vector graphics (especially through clipping path for the latter), as well as 3D graphics and video. Its feature set can be expanded by plug-ins; programs developed and distributed independently of Photoshop that run inside it and offer new or enhanced features.Photoshop's naming scheme was initially based on version numbers. However, in October 2002 (following the introduction of Creative Suite branding), each new version of Photoshop was designated with "CS" plus a number; e.g., the eighth major version of Photoshop was Photoshop CS and the ninth was Photoshop CS2. Photoshop CS3 through CS6 were also distributed in two different editions: Standard and Extended. With the introduction of the Creative Cloud branding in June 2013 (and in turn, the change of the "CS" suffix to "CC"), Photoshop's licensing scheme was changed to that of software as a service subscription model. Historically, Photoshop was bundled with additional software such as Adobe ImageReady, Adobe Fireworks, Adobe Bridge, Adobe Device Central and Adobe Camera RAW.Alongside Photoshop, Adobe also develops and publishes Photoshop Elements, Photoshop Lightroom, Photoshop Express, Photoshop Fix, Adobe Illustrator, and Photoshop Mix. As of November 2019, Adobe has also released a full version of Photoshop for the iPad, and while initially limited, Adobe plans to bring more features to Photoshop for iPad. Collectively, they are branded as "The Adobe Photoshop Family".Photoshop was developed in 1987 by two brothers Thomas and John Knoll, who sold the distribution license to Adobe Systems Incorporated in 1988. Thomas Knoll, a Ph.D. student at the University of Michigan, began writing a program on his Macintosh Plus to display grayscale images on a monochrome display. This program (at that time called Display) caught the attention of his brother John, an Industrial Light and Magic employee, who recommended that Thomas turn it into a full-fledged image editing program. Thomas took a six-month break from his studies in 1988 to collaborate with his brother on the program. Thomas renamed the program ImagePro, but the name was already taken. Later that year, Thomas renamed his program Photoshop and worked out a short-term deal with scanner manufacturer Barneyscan to distribute copies of the program with a slide scanner; a "total of about 200 copies of Photoshop were shipped" this way.During this time, John traveled to Silicon Valley and gave a demonstration of the program to engineers at Apple Computer and Russell Brown, art director at Adobe. Both showings were successful, and Adobe decided to purchase the license to distribute in September 1988. While John worked on plug-ins in California, Thomas remained in Ann Arbor writing code. Photoshop 1.0 was released on February 19, 1990, for Macintosh exclusively. The Barneyscan version included advanced color editing features that were stripped from the first Adobe shipped version. The handling of color slowly improved with each release from Adobe and Photoshop quickly became the industry standard in digital color editing. At the time Photoshop 1.0 was released, digital retouching on dedicated high-end systems (such as the Scitex) cost around $300 an hour for basic photo retouching. The list price of Photoshop 1.0 for Macintosh in 1990 was $895.Photoshop was initially only available on Macintosh. In 1993, Adobe chief architect Seetharaman Narayanan ported Photoshop to Microsoft Windows. The Windows port led to Photoshop reaching a wider mass market audience as Microsoft's global reach expanded within the next few years. On March 31, 1995, Adobe purchased the rights for Photoshop from Thomas and John Knoll for $34.5 million so Adobe would no longer need to pay a royalty for each copy sold. Photoshop files have default file extension as .PSD, which stands for "Photoshop Document". A PSD file stores an image with support for all features of Photoshop; these include layers with masks, transparency, text, alpha channels and spot colors, clipping paths, and duotone settings. This is in contrast to many other file formats (e.g., .JPG or .GIF) that restrict content to provide streamlined, predictable functionality. A PSD file has a maximum height and width of 30,000 pixels, and a length limit of two gigabytes.From the beginning, Photoshop could save files in other formats, including TIF, JPEG, and GIF. These files are smaller than PSD files because they lack the editable features of a PSD file. These formats are required to use the file in publications or on the web. Adobe's discontinued program PageMaker required TIF format.Photoshop can also create and use files with the extension .PSB, which stands for "Photoshop Big" (also known as "large document format"). A PSB file extends the PSD file format, increasing the maximum height and width to 300,000 pixels and the length limit to around 4 Exabytes. The dimension limit was apparently chosen arbitrarily by Adobe, not based on computer arithmetic constraints (it is not close to a power of two, as is 30,000) but for ease of software testing. PSD and PSB formats are documented.Because of Photoshop's popularity, PSD files are widely used and supported to some extent by most competing software, including GIMP and Affinity Photo. The .PSD file format can be exported to and from Adobe's other apps, such as Adobe Illustrator, Adobe Premiere Pro, and After Effects.Photoshop functionality can be extended by add-on programs called Photoshop plugins (or plug-ins). Adobe creates some, such as Adobe Camera Raw, but most are developed by third-parties. Some are free and some are commercial software. Most plugins work with only Photoshop or Photoshop-compatible hosts, but a few can also be run as standalone applications.There are various types of plugins, such as filter, export, import, selection, color correction, and automation. The most popular plugins are the filter plugins (also known as a 8bf plugins), available under the Filter menu in Photoshop. Filter plugins can either modify the current image or create content.Photoshop and derivatives such as Photoshopped (or just Shopped) have become verbs that are sometimes used to refer to images edited by Photoshop, or any image manipulation program. The same happens not only in English but as the Portuguese Wikipedia entry for image manipulation attests, even in that language, with the trademark being followed by the Portuguese verb termination -ar, yielding the word "photoshopar" (to photoshop). Such derivatives are discouraged by Adobe because, in order to maintain validity and protect the trademark from becoming generic, trademarks must be used as proper nouns.-Photoshop's naming scheme was initially based on version numbers, from version 0.07 (codename "Bond"; double-oh-seven), through version 0.87 (codename "Seurat" which was the first commercial version, sold as "Barneyscan XP"), version 1.0 (February 1990) all the way to version 7.0.1. Adobe published 7 major and many minor versions before the October 2003 introduction of version 8.0 which brought with it the Creative Suite branding.Notable milestone features would be: Filters, Colour Separation, Virtual Memory (1.0), Paths, CMYK color (2.0), 16-bits-per-channel support, availability on Microsoft Windows (2.5), Layers, tabbed Palettes (3.0), Adjustments, Actions, Freeform Transform, PNG support (4.0), Editable Type, Magnetic Lasso and Pen, Freeform Pen, Multiple Undo, Layer Effects (5.0), Save For Web (5.5), Vector Shapes, revised User Interface (6.0), Vector Text, Healing Brush, Spell Check (7.0), Camera RAW (7.0.1).In February 2013 Adobe donated the source code of the 1990 1.0.1 version of Photoshop to the Computer History Museum.</p>
+
+    	<h1>Adobe Design</h1>
+    	<p>Adobe InDesign is a desktop publishing and page layout designing software application produced by Adobe Inc. and first released in 1999. It can be used to create works such as posters, flyers, brochures, magazines, newspapers, presentations, books and ebooks. InDesign can also publish content suitable for tablet devices in conjunction with Adobe Digital Publishing Suite. Graphic designers and production artists are the principal users.
+
+InDesign is the successor to Adobe PageMaker, which Adobe acquired by buying Aldus Corporation in late 1994. (Freehand, Aldus's competitor to Adobe Illustrator, was licensed from Altsys, the maker of Fontographer.) By 1998 PageMaker had lost much of professional market to the comparatively feature-rich QuarkXPress version 3.3, released in 1992, and version 4.0, released in 1996. In 1999, Quark announced its offer to buy Adobe[3] and to divest the combined company of PageMaker to avoid problems under United States antitrust law. Adobe rebuffed Quark's offer and continued to develop a new desktop publishing application. Aldus had begun developing a successor to PageMaker, which was code-named "Shuksan". Later, Adobe code-named the project "K2", and Adobe released InDesign 1.0 in 1999.
+
+Adobe launched InDesign in the United Kingdom through a series of promotional presentations in hotels. The marketing concentrated on new software architecture—a small central software kernel (about 2Mb) to which add-ons would be bolted as the program's functionality expanded in later versions. However, the Postscript printer driver for InDesign 1.0 was an external app that tended to acquire frequent corruption problems, requiring periodic reinstallation. Copies of InDesign 1.5 were usually given away when it was found that a host of bugs had to be corrected. By InDesign 2.0, the temperamental printer driver was embedded in the main software. The 'kernel' architecture was never mentioned again.
+
+InDesign was the first native Mac OS X windows (available on almost all devices) publishing (DTP) software. With the third major version, InDesign CS, Adobe increased InDesign's distribution by bundling it with Adobe Photoshop, Adobe Illustrator, and Adobe Acrobat in Adobe Creative Suite.
+
+InDesign exports documents in Adobe's Portable Document Format (PDF) and supports multiple languages. It was the first DTP application to support Unicode character sets, advanced typography with OpenType fonts, advanced transparency features, layout styles, optical margin alignment, and cross-platform scripting with JavaScript.
+
+Later versions of the software introduced new file formats. To support the new features, especially typographic, introduced with InDesign CS, both the program and its document format are not backward-compatible. Instead, InDesign CS2 introduced the INX (.inx) format, an XML-based document representation, to allow backwards compatibility with future versions. InDesign CS versions updated with the 3.1 April 2005 update can read InDesign CS2-saved files exported to the .inx format. The InDesign Interchange format does not support versions earlier than InDesign CS. With InDesign CS4, Adobe replaced INX with InDesign Markup Language (IDML), another XML-based document representation.
+
+Adobe worked on the provision of a 'Drag and Drop' feature and this became available after 2004 but was restricted to dropping graphics and images, not text. Adobe developed InDesign CS3 (and Creative Suite 3) as universal binary software compatible with native Intel and PowerPC Macs in 2007, two years after the announced 2005 schedule, inconveniencing early adopters of Intel-based Macs. Adobe CEO Bruce Chizen had announced that "Adobe will be first with a complete line of universal applications". The CS2 Mac version had code tightly integrated to the PPC architecture, and not natively compatible with the Intel processors in Apple's new machines, so porting the products to another platform was more difficult than had been anticipated. Adobe developed the CS3 application integrating Macromedia products (2005), rather than recompiling CS2 and simultaneously developing CS3. By this time 'Drag and Drop' of type was made available.InDesign CS3 initially had a serious compatibility issue with Leopard (Mac OS X 10.5), as Adobe stated: "InDesign CS3 may unexpectedly quit when using the Place, Save, Save As or Export commands using either the OS or Adobe dialog boxes. Unfortunately, there are no workarounds for these known issues."[6] Apple fixed this with their OS X 10.5.4 update.In October 2005, Adobe released InDesign Server CS2, a modified version of InDesign (without a user interface) for Windows and Macintosh server platforms. It does not provide any editing client; rather, it is for use by developers in creating client–server solutions with the InDesign plug-in technology. In March 2007 Adobe officially announced Adobe InDesign CS3 Server as part of the Adobe InDesign family.</p>
+
+    	<h1>Canvas</h1>
+    	<p>Canvas is an extremely durable plain-woven fabric used for making sails, tents, marquees, backpacks, shelters, as a support for oil painting and for other items for which sturdiness is required, as well as in such fashion objects as handbags, electronic device cases, and shoes. It is popularly used by artists as a painting surface, typically stretched across a wooden frame.Modern canvas is usually made of cotton or linen, or sometimes polyvinyl chloride (PVC), although historically it was made from hemp. It differs from other heavy cotton fabrics, such as denim, in being plain weave rather than twill weave. Canvas comes in two basic types: plain and duck. The threads in duck canvas are more tightly woven. The term duck comes from the Dutch word for cloth, doek. In the United States, canvas is classified in two ways: by weight (ounces per square yard) and by a graded number system. The numbers run in reverse of the weight so a number 10 canvas is lighter than number 4.The word "canvas" is derived from the 13th century Anglo-French canevaz and the Old French canevas. Both may be derivatives of the Vulgar Latin cannapaceus for "made of hemp", originating from the Greek κάνναβις (cannabis).Canvas has become the most common support medium for oil painting, replacing wooden panels. It was used from the 14th century in Italy, but only rarely. One of the earliest surviving oils on canvas is a French Madonna with angels from around 1410 in the Gemäldegalerie, Berlin. Its use in Saint George and the Dragon by Paolo Uccello in about 1470, and Sandro Botticelli's Birth of Venus in the 1480s was still unusual for the period. Large paintings for country houses were apparently more likely to be on canvas, and are perhaps less likely to have survived. It was a good deal cheaper than a panel painting, and may sometime indicate a painting regarded as less important. In the Uccello, the armour does not use silver leaf, as other of his paintings do (and the colour therefore remains undegraded). Another common category of paintings on lighter cloth such as linen was in distemper or glue, often used for banners to be carried in procession. This is a less durable medium, and surviving examples such as Dirk Bouts' Entombment, in distemper on linen (1450s, National Gallery) are rare, and often rather faded in appearance.Panel painting remained more common until the 16th century in Italy and the 17th century in Northern Europe. Mantegna and Venetian artists were among those leading the change; Venetian sail canvas was readily available and regarded as the best quality.Canvas is usually stretched across a wooden frame called a stretcher and may be coated with gesso prior to being used to prevent oil paint from coming into direct contact with the canvas fibres which would eventually cause the canvas to decay. A traditional and flexible chalk gesso is composed of lead carbonate and linseed oil, applied over a rabbit skin glue ground; a variation using titanium white pigment and calcium carbonate is rather brittle and susceptible to cracking. As lead-based paint is poisonous, care has to be taken in using it. Various alternative and more flexible canvas primers are commercially available, the most popular being a synthetic latex paint composed of titanium dioxide and calcium carbonate, bound with a thermo-plastic emulsion.Many artists have painted onto unprimed canvas, such as Jackson Pollock, Kenneth Noland, Francis Bacon, Helen Frankenthaler, Dan Christensen, Larry Zox, Ronnie Landfield, Color Field painters, Lyrical Abstractionists and others. Staining acrylic paint into the fabric of cotton duck canvas was more benign and less damaging to the fabric of the canvas than the use of oil paint. In 1970 artist Helen Frankenthaler commented about her use of staining:When I first started doing the stain paintings, I left large areas of canvas unpainted, I think, because the canvas itself acted as forcefully and as positively as paint or line or color. In other words, the very ground was part of the medium, so that instead of thinking of it as background or negative space or an empty spot, that area did not need paint because it had paint next to it. The thing was to decide where to leave it and where to fill it and where to say this doesn't need another line or another pail of colors. It's saying it in space.Early canvas was made of linen, a sturdy brownish fabric of considerable strength. Linen is particularly suitable for the use of oil paint. In the early 20th century, cotton canvas, often referred to as "cotton duck", came into use. Linen is composed of higher quality material, and remains popular with many professional artists, especially those who work with oil paint. Cotton duck, which stretches more fully and has an even, mechanical weave, offers a more economical alternative. The advent of acrylic paint has greatly increased the popularity and use of cotton duck canvas. Linen and cotton derive from two entirely different plants, the flax plant and the cotton plant, respectively.Gessoed canvases on stretchers are also available. They are available in a variety of weights: light-weight is about 4 oz/sq yd (140 g/m2) or 5 oz/sq yd (170 g/m2); medium-weight is about 7 oz/sq yd (240 g/m2) or 8 oz/sq yd (270 g/m2); heavy-weight is about 10 oz/sq yd (340 g/m2) or 12 oz/sq yd (410 g/m2). They are prepared with two or three coats of gesso and are ready for use straight away. Artists desiring greater control of their painting surface may add a coat or two of their preferred gesso. Professional artists who wish to work on canvas may prepare their own canvas in the traditional manner.One of the most outstanding differences between modern painting techniques and those of the Flemish and Dutch Masters is in the preparation of the canvas. "Modern" techniques take advantage of both the canvas texture as well as those of the paint itself. Renaissance masters took extreme measures to ensure that none of the texture of the canvas came through. This required a painstaking, months-long process of layering the raw canvas with (usually) lead-white paint, then polishing the surface, and then repeating.[8] The final product had little resemblance to fabric, but instead had a glossy, enamel-like finish.With a properly prepared canvas, the painter will find that each subsequent layer of color glides on in a "buttery" manner, and that with the proper consistency of application (fat over lean technique), a painting entirely devoid of brushstrokes can be achieved. A warm iron is applied over a piece of wet cotton to flatten the wrinkles.Canvas can also be printed on using offset or specialist digital printers to create canvas prints. This process of digital inkjet printing is popularly referred to as Giclée. After printing, the canvas can be wrapped around a stretcher and displayed.</p>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script>
+    	$(document).ready(function(){
+    		$(window).on('scroll', function(){
+    			if ($(window).scrollTop()) {
+                    $("header").addClass('bgc');
+    			}else{
+                    $("header").removeClass('bgc');
+    			}
+    		});
+    	});
+    </script>
+</body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+				<link rel="shortcut icon" type="image/png" href="logo-black.png">
+			<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+		
+
+		<title>Graphical Design</title>
+		<style>
+			*::after,
+::before{
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+}
+html{
+	  font-size: 62.5%;
+}
+body {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height:1.7;
+        color: #777;
+	    padding: 3rem;
+	
+	    box-sizing: border-box;
+}
+.header {
+           height: 95vh;
+           background-image:linear-gradient(to right bottom, rgba(126,213,111,0.80), rgba(40,180,131,0.80)), url("1.jpeg");
+           background-size: cover;
+	       background-position: top;
+	       position: relative;
+	       clip-path: polygon(0 0,100% 0,100% 75vh,0 100%)
+}	
+.header__logo-box{
+	        position: absolute;
+	        top: 4rem;
+	        left: 4rem;
+	
+}
+.header__logo{
+	        height: 150px;
+}
+.header__text-box{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.heading-primary{
+	              color: #fff;
+	              text-transform: uppercase;
+	              backface-visibility: hidden;
+	              margin-bottom: 6rem;
+}
+.heading-primary--main{
+	                   display: block;
+	                   font-size: 8rem;
+	                   font-weight: 400;
+	                   letter-spacing: 3.5rem;
+	                   animation-name: moveInLeft;
+	                   animation-duration: 1s;
+	                   animation-timing-function: ease-out;
+	                   /*
+	                   animation-iteration-count: 3;
+	                   animation-delay: 3s;
+	                   */
+}
+.heading-primary--sub{
+	                    display: block;
+	                   font-size: 1.8rem;
+	                   font-weight: 700;
+	                   letter-spacing: 1.74rem;
+	                   animation: moveInRight 1s ease-out;
+
+}
+@keyframes moveInLeft {
+	0%{
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+	80%{
+		 transform: translateX(1rem);
+	}
+	100%{
+		   opacity: 1;
+		   transform: translate(0);
+	}
+}
+@keyframes moveInRight {
+	0%{
+		opacity: 0;
+		transform: translateX(10rem)
+	}
+	80%{
+		 transform: translateX(-1rem);
+	}
+	100%{
+		   opacity: 1;
+		   transform: translate(0);
+	}
+}
+@keyframes moveInBottom {
+	0%{
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	100%{
+		   opacity: 1;
+		   transform: translate(0);
+	}
+}
+
+.btn:link,
+.btn:visited {
+	           text-transform: uppercase;
+	           text-decoration: none;
+	            padding: 1.5rem 4rem;
+	           display: inline-block;
+	           border-radius: 10rem;
+	           transition: all .2s;
+	           position: relative;
+	           font-size: 1.6rem;
+}
+.btn:hover{
+	 transform: translateY(-3px);
+	 box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+.btn:active{
+	        transform: translateY(-1px);
+	        box-shadow: 0 0.5rem 1rem rgba(0,0,0,.2);
+}
+.btn--white {
+	         background-color: #fff;
+	         color: #777;
+}
+.btn::after {
+	          content: "";
+	          display: inline-block;
+	          height: 100%;
+	          width: 100%;
+	          border-radius: 100px;
+	          position: absolute;
+	          top: 0;
+	          left: 0;
+	          z-index: -1;
+	          transition: all .4s;
+	}
+.btn--white::after{
+	 background-color: #fff;
+}
+.btn:hover::after {
+	transform: scaleX(1.4) scaleY(1.6);
+	opacity: 0;
+}
+.btn--animated {
+	      animation: moveInBottom .5s ease-out .75s;
+	      animation-fill-mode: backwards;
+}
+.section-about{
+	               background-color: antiquewhite;
+	               padding: 25rem 0;
+	               margin-top: -20vh;
+
+}
+ .u-center-text{
+	              text-align: center;
+}
+
+.heading-secondary{
+	                   display: inline-block;
+	                   font-size: 3.5rem;
+	                   font-weight: 700;
+	                   text-transform: uppercase;
+	                   background-image: linear-gradient(to right,rgba(126,213,111,0.80), rgba(40,180,131,0.80));
+	                   -webkit-background-clip: text;
+	                   color: transparent;
+	                   letter-spacing: .2rem; 
+	                   transition: all .2s;
+	                   transform: skewX(2deg);
+	}
+
+.slide{
+	   	display: flex;
+	    justify-content: space-between;
+	
+}
+.center {
+           height: 95vh;
+           background-image:linear-gradient(to right bottom, rgba(126,213,111,0.80), rgba(40,180,131,0.80));
+           background-size: cover;
+	       background-position: top;
+	       position: inherit;
+	       margin-top: -20vh;
+	       clip-path: polygon(0 0,100% 0,100% 75vh,0 100%)
+}	
+.center-primary--main{
+	                    display: block;
+	                   font-size: 5rem;
+	                   font-weight: 400;
+	                   letter-spacing: 1.5rem;
+	                   animation-name: moveInLeft;
+	                   animation-duration: 1s;
+	                   animation-timing-function: ease-out;
+	                   color: #fff;
+	                   text-align: center;
+
+}
+.paragraph{
+	color: #fff;
+}
+.center-primary--sub{
+	                    display: block;
+	                   font-size: 1.8rem;
+	                   font-weight: 700;
+	                   letter-spacing: 0.74rem;
+	animation-name: moveInLeft;
+	                   animation-duration: 1s;
+	                   animation-timing-function: ease-out;
+
+color: #fff;
+	                    text-align: center;
+}
+.container{
+	         display: flex;
+	         justify-content: center;
+	         align-items: center;
+	         flex-wrap: wrap;
+	
+	  }
+.container a{
+	          position: relative;
+	          display: inline-block;
+	          padding: 15px 30px;
+	          border: 2px solid #0f0;
+	          margin: 40px;
+	         text-transform: uppercase;
+	          font-weight: 600;
+	          text-decoration: none;
+	          letter-spacing: 2px;
+	          color : #fff;
+	          -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+	          transition: 0.5s;
+	          
+}
+.container a:hover{
+	                color: #000;
+	                box-shadow: 0 0 10px #0f0,
+						         0 0 20px #0f0,
+						   0 0 40px #0f0,
+						0 0 80px #0f0,
+						0 0 160px #0f0;
+}
+.conatiner a span{
+	position: relative;
+	z-index: 100px;
+}
+.container a:nth-child(2)
+{
+	filter: hue-rotate(80deg);
+}
+.container a::before{
+	                  content: '';
+	              position: absolute;
+	             left: -20px;
+	              top: 50%;
+	              transform: translateY(-50%);
+	             width: 20px;
+	              height: 2px;
+	             background: #0f0;
+	             box-shadow: 5px -8px 0 #0f0,
+	                         5px 8px 0 #0f0;
+	             transition: width 0.5s, left 0.5s, height 0.5s,
+					           box-shadow 0.5s;
+	             transition-delay: 1s,0.5s,0s,0s;
+}
+.container a:hover::before
+{
+	  width: 60%;
+	  height: 100%;
+	  left: -2px;
+	  box-shadow: 5px 0 0 #0f0,
+	              5px 0 0 #0f0;
+	transition-delay: 0s,0.5s,1s,1s;
+}
+.container a::after{
+	                  content: '';
+	              position: absolute;
+	             right: -20px;
+	              top: 50%;
+	              transform: translateY(-50%);
+	             width: 20px;
+	              height: 2px;
+	             background: #0f0;
+	             box-shadow: -5px -8px 0 #0f0,
+	                         -5px 8px 0 #0f0;
+	             transition: width 0.5s, left 0.5s, height 0.5s,
+					           box-shadow 0.5s;
+	             transition-delay: 1s,0.5s,0s,0s;
+}
+.container a:hover::after
+{
+	  width: 60%;
+	  height: 100%;
+	  right: -2px;
+	  box-shadow: -5px 0 0 #0f0,
+	              -5px 0 0 #0f0;
+	transition-delay: 0s,0.5s,1s,1s;
+}
+.animation{
+	               background-color: aquamarine;
+	               padding: 25rem 0;
+	               margin-top: -20vh;
+	               color:#f7f7f7;
+	               font-size: 2rem;
+}
+.container1{
+	         display: flex;
+	         justify-content: center;
+	         align-items: center;
+	         flex-wrap: wrap;
+	
+	  }
+.container1 a{
+	          position: relative;
+	          display: inline-block;
+	          padding: 15px 30px;
+	          border: 2px solid #0f0;
+	          margin: 40px;
+	         text-transform: uppercase;
+	          font-weight: 600;
+	          text-decoration: none;
+	          letter-spacing: 2px;
+	          color : #fff;
+	          -webkit-box-reflect: below 0px linear-gradient(transparent,#0002);
+	          transition: 0.5s;
+	          
+}
+.container1 a:hover{
+	                color: #000;
+	                box-shadow: 0 0 10px #0f0,
+						         0 0 20px #0f0,
+						   0 0 40px #0f0,
+						0 0 80px #0f0,
+						0 0 160px #0f0;
+}
+.conatiner1 a span{
+	position: relative;
+	z-index: 100px;
+}
+.container1 a:nth-child(2)
+{
+	filter: hue-rotate(80deg);
+}
+.container1 a::before{
+	                  content: '';
+	              position: absolute;
+	             left: -20px;
+	              top: 50%;
+	              transform: translateY(-50%);
+	             width: 20px;
+	              height: 2px;
+	             background: #0f0;
+	             box-shadow: 5px -8px 0 #0f0,
+	                         5px 8px 0 #0f0;
+	             transition: width 0.5s, left 0.5s, height 0.5s,
+					           box-shadow 0.5s;
+	             transition-delay: 1s,0.5s,0s,0s;
+}
+.container1 a:hover::before
+{
+	  width: 60%;
+	  height: 100%;
+	  left: -2px;
+	  box-shadow: 5px 0 0 #0f0,
+	              5px 0 0 #0f0;
+	transition-delay: 0s,0.5s,1s,1s;
+}
+.container1 a::after{
+	                  content: '';
+	              position: absolute;
+	             right: -20px;
+	              top: 50%;
+	              transform: translateY(-50%);
+	             width: 20px;
+	              height: 2px;
+	             background: #0f0;
+	             box-shadow: -5px -8px 0 #0f0,
+	                         -5px 8px 0 #0f0;
+	             transition: width 0.5s, left 0.5s, height 0.5s,
+					           box-shadow 0.5s;
+	             transition-delay: 1s,0.5s,0s,0s;
+}
+.container1 a:hover::after
+{
+	  width: 60%;
+	  height: 100%;
+	  right: -2px;
+	  box-shadow: -5px 0 0 #0f0,
+	              -5px 0 0 #0f0;
+	transition-delay: 0s,0.5s,1s,1s;
+}
+
+.container3{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/responsive/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+	}
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: whitesmoke;
+  overflow-y: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #81818;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: green;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+		</style>
+	</head>
+    <body>
+		<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Home</a>
+  <a href="About.html">About</a>
+  <a href="designapp.html">Design Apps</a>
+  <a href="contact.html">Contact</a>
+</div>
+		
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+   
+		     <header class="header">
+                <div class="header__logo-box">
+					 <img src="logo-black.png" alt="logo" class="header__logo">
+				</div>
+				 
+				<div class="header__text-box">
+					<h1 class="heading-primary">
+				     <span class="heading-primary--main">Design</span>
+				     <span class="heading-primary--sub"> where graphics had born</span> 
+			      </h1>
+					<a href="#" class="btn btn--white btn--animated">Discover our design</a>
+				</div>
+             </header> 
+		     <main>
+                     <section class="section-about">
+					 <div class="u-center-text">
+					 <h2 class="heading-secondary">
+						 Graphical Design
+					 </h2>
+					 </div>
+					 <div class="side">
+						   <div class="text">		
+					       <h3>You are going to fall in love with graphics.</h3>
+						 <p>
+						   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                          </p>
+						 </div>
+						 </div>
+						 </section>
+				         <div class="center">
+                                <h1 class="center-primary">
+								<span class="center-primary--main">TYPES OF DESIGN APPS</span>
+								<h3 class="paragraph">
+								<p> There are lot of design apps in the world in that we are explaining some most popular apps. In these world the most popular design apps used by people are Adobe photoshop,Canvas and other apps. These apps are very usefyl to design. We need to edit the video we cn use premiere pro. These premiere pro will helpful to edit the youtube videos and social clips. And next one is phtoshop today photoshop is the most used app in the world. In these phtoshop we can edit the photos with different features.Not only in the photoshop there are lot of apps to edit the photos.	And most of the people are showing interest to create the design apps. And they are developing these kind of apps. </p>
+								</h3>
+									<span class="center-primary--sub">"Only talented people can do design's"</span>
+							 </h1>
+							        <div class="container">
+							        <a href="cards.html" target="_blank"><span>Learn More</span></a>
+							        </div>
+							 
+				         </div>
+				          <div class="animation">
+							     <h1 align="center">Apps and Their Details</h1>
+							     <p> We are planning the tutorials of design apps. We are planning with the top lectures.These will take you to the next level. If any have doubts regarding design apps you can join in our website.I think this might will helpful to the students.</p>
+							  <div class="container1">
+							        <a href="card1.html" target="_blank"><span>Visit</span></a>
+							        </div>
+
+							 </div>
+				 
+		</main>
+		<footer class="footer">
+  	 <div class="container3">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>get help</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+
+    </body>
+</html>
+
+		     
